@@ -6,8 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import GlobalStyle from './components/globalstyle/GlobalStyle';
-import Navbar from './components/navbar/Navbar';
-// import Home from "./pages/landing.js"
+import Home from "./pages/Home"
 
 const App = () => {
   return (
@@ -15,8 +14,7 @@ const App = () => {
       <GlobalStyle />
       <Router>
         <Switch>
-          {/* <Route path="/" component={Home} exact /> */}
-          <Route path="/nav" component={Navbar} exact />
+          <Route path="/" component={Home} exact />
         </Switch>
 
       </Router>
