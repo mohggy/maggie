@@ -21,6 +21,7 @@ export const HamburgerBars = styled(FaBars)`
     color: white;
     transform: translateY(15%);
   }
+  cursor: pointer;
 `;
 
 export const HamburgerMenu = styled.div`
