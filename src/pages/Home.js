@@ -1,24 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Body from '../components/body/Body'
-import ResponsiveNav from '../components/navbar/ResponsiveNav'
 import { BannerData } from '../data/bannerData'
+import { BodyDataOne } from '../data/bodyData'
 import Banner from './../components/banner/Banner'
-import Navbar from "./../components/navbar/Navbar"
 
 const Home = () => {
 
-    const[open, setOpen] = useState(false)
-
-    const toggle = () =>  {
-        setOpen(!open)
-    }
+   
     return (
         <>
 
-        <Navbar toggle={toggle}/>
-        <ResponsiveNav open={open} toggle={toggle}/>
         <Banner pictures={BannerData}/>
-        <Body />
+        <Body {...BodyDataOne} />
+
         </ >
 
     )
