@@ -2,13 +2,13 @@ import React, {useState} from 'react'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import GlobalStyle from './components/globalstyle/GlobalStyle';
 import Home from "./pages/Home"
 import Navbar from "./components/navbar/Navbar.js"
 import ResponsiveNav from './components/navbar/ResponsiveNav';
+import AboutMe from './pages/AboutMe';
 
 
 const App = () => {
@@ -25,6 +25,7 @@ const App = () => {
         <ResponsiveNav open={open} toggle={toggle}/>
         <Switch>
           <Route path="/" component={Home} exact />
+          <Route path="/aboutme" component={AboutMe} exact/>
         </Switch>
 
       </Router>
